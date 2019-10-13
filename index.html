@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Delivery Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Food Delivery Feedback Survey </h1>
+        <p style="font-size: 0.9em;" id="description"> We always value our customers. Please tell us how we did! </p>
+    </header>
+    <p style="font-size: 0.9em;" id="instruction"> Please fill the survey below to discuss your experience with our food
+        delivery service. Click the "Submit" button to submit all your answers.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label"> Name: </label> <br>
+        <input type="text" id="name" placeholder="Bob Smith" required> <br> <br>
+        <label for="email" id="email-label"> Email: </label> <br>
+        <input type="email" id="email" placeholder="bobsmith@hotmail.com" required> <br> <br>
+        <label for="number" id="number-label"> Service Rating (1-5): </label> <br>
+        <input type="number" id="number" min="1" max="5" placeholder="5" required> <br> <br>
+        <label> How long did it take for you to receive your food? </label> <br>
+        <select name="dropdown" id="dropdown" required>
+            <option value="lessfive"> Less than 5 minutes </option>
+            <option value="fivetoten"> 5 to 10 minutes </option>
+            <option value="moreten"> More than 10 minutes </option>
+        </select> <br> <br>
+        <label> Would you recommend us to your friends/family? </label> <br>
+        <input type="radio" name="recommend" value="yes" required> Yes <br>
+        <input type="radio" name="recommend" value="no"> No <br>
+        <input type="radio" name="recommend" value="maybe"> Maybe <br> <br>
+        <label> What do you like about our food delivery service? (Check all that apply.) </label> <br>
+        <input type="checkbox" value="fast"> Fast Delivery <br>
+        <input type="checkbox" value="reliable"> Reliable <br>
+        <input type="checkbox" value="cheap"> Cheap <br>
+        <input type="checkbox" value="goodcustserv"> Good Customer Service <br> <br> <br>
+        <label> Additional Comments: </label> <br>
+        <textarea name="comments" rows="7"></textarea>
+        <div style="text-align: center;">
+            <input type="submit" value="Submit" id="submit">
+            <p> <i>Thank you for sharing your feedback!</i> </p>
+            <p> <i class="far fa-smile"></i> <i>Have a nice day!</i> <i class="far fa-smile"></i></p>
+        </div>
+    </form>
+    <footer>
+        <p> Alex H, 2019. freeCodeCamp</p>
+    </footer>
+</body>
+
+</html>
