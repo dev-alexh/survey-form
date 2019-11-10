@@ -1,5 +1,5 @@
 # survey-form
-Survey form web project created for the Responsive Web Design Certificate (freeCodeCamp).
+Survey form web project created for the Responsive Web Design Developer Certificate (freeCodeCamp).
 
 Languages: HTML5, CSS3
 
